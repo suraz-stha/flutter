@@ -69,13 +69,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           child: new Text('My First Flutter App with list view and alert'),
         ),
         backgroundColor: Colors.red,
-        // bottom: new TabBar(
-        //   controller: controller,
-        //   tabs: <Widget>[
-        //     new Tab(icon: new Icon(Icons.airplanemode_active),),
-        //     new Tab(icon: new Icon(Icons.airplanemode_inactive),)
-        //   ],
-        // ),
+        bottom: new TabBar(
+          controller: controller,
+          tabs: <Widget>[
+            new Tab(icon: new Icon(Icons.airplanemode_active),),
+            new Tab(icon: new Icon(Icons.airplanemode_inactive),)
+          ],
+        ),
       ),
       // bottomNavigationBar: new Material(
       //   color: Colors.teal,
@@ -87,14 +87,14 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       //     ],
       //   ),
       // ),
-      // body: new TabBarView(
-      //   controller: controller,
-      //   children: <Widget>[
-      //     new firstpage.FirstPage(),
-      //     new secondpage.SecondPage(),
-      //   ],
-      // ),
-      body: new _MyList()
+      body: new TabBarView(
+        controller: controller,
+        children: <Widget>[
+          new firstpage.FirstPage(),
+          new secondpage.SecondPage(),
+        ],
+      ),
+      // body: new _MyList()
     );
   }
 }
