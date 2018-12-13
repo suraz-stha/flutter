@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page Day 1'),
     );
@@ -66,9 +66,9 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     return new Scaffold(
       appBar: new AppBar(
         title: new Center(
-          child: new Text('My First Flutter App with Tabs'),
+          child: new Text('My First Flutter App with list view and alert'),
         ),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.red,
         // bottom: new TabBar(
         //   controller: controller,
         //   tabs: <Widget>[
@@ -107,7 +107,7 @@ class _MyList extends StatelessWidget {
          return new ListTile(
            title: new Text('Random Username'),
            subtitle: new Text('Online',style: new TextStyle(fontStyle: FontStyle.italic,color: Colors.green),),
-           leading: const Icon(Icons.face),
+           leading: const Icon(Icons.access_alarms),
            trailing: new RaisedButton(
              child:  new Text('Remove'),
              onPressed: (){
